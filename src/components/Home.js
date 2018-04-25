@@ -3,7 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import { Tabs, Tab } from 'material-ui/Tabs';
 import FontIcon from 'material-ui/FontIcon';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 import About from './navbar/About';
 import Contact from './navbar/Contact';
@@ -14,14 +14,14 @@ class Home extends Component {
       <MuiThemeProvider>
       <div>
         <Tabs>
-          <Tab icon={<FontIcon className="muidocs-icon-action-home"/>}/>
-          <Tab icon={<FontIcon className="material-icons">contacts</FontIcon>}
-               label="Contacts"
+          <Tab icon={<FontIcon className="muidocs-icon-action-home"><Link to="/home" style= {{textDecoration: 'none'}} >Home</Link></FontIcon>}
           />
-          <Tab icon={<FontIcon className="material-icons">settings</FontIcon>}
-               label="Settings"
+          <Tab icon={<FontIcon className="material-icons"><Link to="/about">About</Link></FontIcon>}
+          />
+          <Tab icon={<FontIcon className="material-icons"><Link to="/contact">Contact</Link></FontIcon>}
           />
         </Tabs>
+        <h1>This is Home Component!</h1>
       </div>
       </MuiThemeProvider>
     );
