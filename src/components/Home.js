@@ -14,14 +14,14 @@ class Home extends Component {
       <MuiThemeProvider>
       <div>
         <Tabs>
-          <Tab icon={<FontIcon className="muidocs-icon-action-home"><Link to="/home" style= {{textDecoration: 'none'}} >Home</Link></FontIcon>}
+          <Tab icon={<FontIcon className="muidocs-icon-action-home"><Link to="/home" style ={{textDecoration: "none"}} >Home</Link></FontIcon>}
           />
-          <Tab icon={<FontIcon className="material-icons"><Link to="/about">About</Link></FontIcon>}
+          <Tab icon={<FontIcon className="material-icons"><Link to="/about" style ={{textDecoration: "none"}}>About</Link></FontIcon>}
           />
-          <Tab icon={<FontIcon className="material-icons"><Link to="/contact">Contact</Link></FontIcon>}
+          <Tab icon={<FontIcon className="material-icons"><Link to="/contact" style ={{textDecoration: "none"}}>Contact</Link></FontIcon>}
           />
         </Tabs>
-        <h1>This is Home Component!</h1>
+        <h1>This is Home Page!</h1>
       </div>
       </MuiThemeProvider>
     );

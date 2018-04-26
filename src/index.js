@@ -27,7 +27,7 @@ const routes = (
 );
 
 ReactDOM.render(
-  routes
+  <App />
   ,
   document.getElementById('root'));
 registerServiceWorker();

@@ -9,6 +9,7 @@ src/routes
 src/components/Header.js
 src/components/Login.js
 src/components/Table.js
+src/services
 
 # testing
 /coverage

@@ -5,18 +5,20 @@ import { Card, CardText } from 'material-ui/Card';
 import TableExampleSimple from './components/Table';
 
 //Components
+import Login from './components/Login';
 import Header from './components/Header';
-import LoginForm from './components/Login'
 import Home from './components/Home';
-
 import About from './components/navbar/About';
 
 class App extends Component {
-  render() {
+  render() { 
     return (
-      <div>
-        <Home />
-      </div>
+      <MuiThemeProvider>
+        <div>
+          <Login />
+          
+        </div>
+      </MuiThemeProvider>
     );
   }
 }
