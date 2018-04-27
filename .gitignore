@@ -4,7 +4,6 @@
 /node_modules
 
 # folder
-src/routes
 
 src/components/Table.js
 src/services
