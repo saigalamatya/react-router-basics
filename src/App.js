@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // Material UI
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Card, CardText } from 'material-ui/Card';
-import TableExampleSimple from './components/Table';
+// import TableExampleSimple from './components/Table';
 
 //Components
 import Login from './components/Login';
